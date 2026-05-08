@@ -1,0 +1,335 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Agro Forte Enhanced Green Palette */
+  --primary: #1B5E20;
+  --primary-foreground: #F1F8E9;
+  --sidebar-primary: #2E7D32;
+  --sidebar-primary-foreground: #F1F8E9;
+  --chart-1: #A5D6A7;
+  --chart-2: #66BB6A;
+  --chart-3: #43A047;
+  --chart-4: #2E7D32;
+  --chart-5: #1B5E20;
+  
+  --radius: 0.65rem;
+  --background: oklch(0.99 0.001 120);
+  --foreground: oklch(0.15 0.02 65);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.02 65);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 65);
+  --secondary: oklch(0.97 0.003 120);
+  --secondary-foreground: oklch(0.35 0.02 120);
+  --muted: oklch(0.94 0.002 120);
+  --muted-foreground: oklch(0.55 0.015 120);
+  --accent: #4CAF50;
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.90 0.005 120);
+  --input: oklch(0.92 0.004 120);
+  --ring: #1B5E20;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.15 0.02 65);
+  --sidebar-accent: oklch(0.94 0.002 120);
+  --sidebar-accent-foreground: #1B5E20;
+  --sidebar-border: oklch(0.92 0.004 120);
+  --sidebar-ring: #1B5E20;
+}
+
+.dark {
+  --primary: #4CAF50;
+  --primary-foreground: #0D3818;
+  --sidebar-primary: #81C784;
+  --sidebar-primary-foreground: #0D3818;
+  --background: oklch(0.12 0.01 120);
+  --foreground: oklch(0.92 0.005 120);
+  --card: oklch(0.18 0.01 120);
+  --card-foreground: oklch(0.92 0.005 120);
+  --popover: oklch(0.18 0.01 120);
+  --popover-foreground: oklch(0.92 0.005 120);
+  --secondary: oklch(0.22 0.01 120);
+  --secondary-foreground: oklch(0.8 0.01 120);
+  --muted: oklch(0.28 0.01 120);
+  --muted-foreground: oklch(0.7 0.015 120);
+  --accent: #81C784;
+  --accent-foreground: #0D3818;
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: #81C784;
+  --chart-1: #A5D6A7;
+  --chart-2: #66BB6A;
+  --chart-3: #43A047;
+  --chart-4: #2E7D32;
+  --chart-5: #1B5E20;
+  --sidebar: oklch(0.18 0.01 120);
+  --sidebar-foreground: oklch(0.92 0.005 120);
+  --sidebar-accent: oklch(0.28 0.01 120);
+  --sidebar-accent-foreground: #81C784;
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: #81C784;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  /* Typography */
+  h1 {
+    @apply text-5xl font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+  
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  
+  p {
+    @apply text-base leading-relaxed;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* Agro Forte Custom Components */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .section-divider {
+    @apply relative h-16 bg-gradient-to-b from-background to-background;
+  }
+  
+  .card-elevated {
+    @apply bg-card text-card-foreground rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  /* Green gradient backgrounds */
+  .bg-gradient-green {
+    background: linear-gradient(135deg, #F1F8E9 0%, #E8F5E9 100%);
+  }
+  
+  .bg-gradient-green-dark {
+    background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);
+  }
+  
+  .bg-gradient-green-accent {
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+  }
+  
+  /* Decorative elements */
+  .leaf-decoration {
+    position: relative;
+  }
+  
+  .leaf-decoration::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(76, 175, 80, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  /* Section backgrounds with subtle patterns */
+  .section-light {
+    background: linear-gradient(to bottom, #F1F8E9 0%, #FFFFFF 100%);
+  }
+  
+  .section-accent {
+    background: linear-gradient(to bottom, #E8F5E9 0%, #F1F8E9 100%);
+  }
+  
+  /* Animated underline */
+  .underline-animated {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-animated::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #1B5E20, #4CAF50);
+    transition: width 0.3s ease;
+  }
+  
+  .underline-animated:hover::after {
+    width: 100%;
+  }
+  
+  /* Card with green accent border */
+  .card-green-accent {
+    @apply bg-card text-card-foreground rounded-lg shadow-md p-6 border-l-4 border-primary hover:shadow-lg transition-all duration-300;
+  }
+  
+  /* Green badge */
+  .badge-green {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-primary/10 text-primary;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse-soft {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  
+  .pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+}
+
+/* Custom font family definitions */
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+}

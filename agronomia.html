@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">
+                <span class="leaf-icon">🌿</span>
+                <span class="logo-text">Agro Forte</span>
+            </div>
+            <div class="navbar-links">
+                <a href="#pilares" class="nav-link">Pilares</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#tecnologia" class="nav-link">Tecnologia</a>
+                <a href="#casos" class="nav-link">Casos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <button class="btn-contact" onclick="navigateTo('contato')">Contato</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/hero-agro-forte-DKtdWZrENnKCFFYBwickGd.webp');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Agro Forte, Futuro Sustentável</h1>
+            <p class="hero-subtitle">Equilíbrio entre produção agrícola e preservação ambiental. Tecnologia, inovação e responsabilidade para alimentar o mundo sem comprometer o planeta.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="navigateTo('sobre')">Explore Nossa Missão</button>
+                <button class="btn btn-secondary" onclick="navigateTo('solucoes')">Conheça as Soluções</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">8.5M</div>
+                    <div class="stat-label">Hectares Sustentáveis</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Propriedades Transformadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30-50%</div>
+                    <div class="stat-label">Aumento de Rentabilidade</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">Toneladas de CO₂ Sequestrado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares Section -->
+    <section id="pilares" class="section-pilares">
+        <div class="container">
+            <h2 class="section-title">Os Cinco Pilares da Sustentabilidade</h2>
+            <p class="section-subtitle">Fundamentos que guiam nossa transformação agrícola</p>
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <div class="pilar-icon">🌱</div>
+                    <h3>Plantio Direto</h3>
+                    <p>Técnica que reduz erosão, melhora a retenção de água e aumenta a matéria orgânica do solo.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">💧</div>
+                    <h3>Gestão de Água</h3>
+                    <p>Sistemas inteligentes que otimizam o uso da água, reduzindo desperdício em até 60%.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">🧪</div>
+                    <h3>Bioinsumos</h3>
+                    <p>Fertilizantes e defensivos biológicos que protegem plantas sem prejudicar o ecossistema.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">🤖</div>
+                    <h3>Precisão Agrícola</h3>
+                    <p>Tecnologia de drones e sensores para monitoramento em tempo real das culturas.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">🌾</div>
+                    <h3>ILPF</h3>
+                    <p>Integração Lavoura-Pecuária-Floresta para maximizar produção e preservação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="section-gallery">
+        <div class="container">
+            <h2 class="section-title">Máquinas Agrícolas em Ação</h2>
+            <p class="section-subtitle">Visão aérea de drones mostrando tecnologia em operação</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-tractor-plowing-6nHJLvGZqQHLXiB2LBZqhN.webp');">
+                    <div class="gallery-overlay">
+                        <h3>Trator Arando</h3>
+                        <p>Preparação do solo com precisão</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-harvester-working-8yMqNLJCvVGPxWwKHtVmLK.webp');">
+                    <div class="gallery-overlay">
+                        <h3>Colheitadeira</h3>
+                        <p>Colheita eficiente e sustentável</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-sprayer-application-7Kz2JhMnPqRsWxYzAbCdEf.webp');">
+                    <div class="gallery-overlay">
+                        <h3>Pulverizador</h3>
+                        <p>Aplicação de bioinsumos</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-machinery-fleet-gowmud5JTZKrXvd8ytoJhj.webp');">
+                    <div class="gallery-overlay">
+                        <h3>Frota Coordenada</h3>
+                        <p>Operações integradas e sincronizadas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-button">
+                <button class="btn btn-primary" onclick="openGalleryModal()">Explorar Galeria Completa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tecnologia" class="section-technology" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/technology-agro-JqizRRC8kQ3Ppn6nLmBNwX.webp');">
+        <div class="technology-overlay"></div>
+        <div class="container technology-content">
+            <h2 class="section-title text-white">Tecnologia a Serviço da Sustentabilidade</h2>
+            <div class="technology-grid">
+                <div class="tech-item">
+                    <h3 class="text-white">Drones com Câmeras Multiespectrais</h3>
+                    <p class="text-gray-200">Captura dados em tempo real para análise completa de saúde das culturas.</p>
+                </div>
+                <div class="tech-item">
+                    <h3 class="text-white">Sensores IoT Distribuídos</h3>
+                    <p class="text-gray-200">Monitoram umidade, temperatura e nutrientes do solo continuamente.</p>
+                </div>
+                <div class="tech-item">
+                    <h3 class="text-white">IA e Machine Learning</h3>
+                    <p class="text-gray-200">Previsões precisas de colheita e otimização automática de recursos.</p>
+                </div>
+                <div class="tech-item">
+                    <h3 class="text-white">Plataforma de Gestão</h3>
+                    <p class="text-gray-200">Dashboard integrado para controle completo da propriedade.</p>
+                </div>
+            </div>
+            <button class="btn btn-accent" onclick="navigateTo('solucoes')">Conheça Nossas Soluções</button>
+        </div>
+    </section>
+
+    <!-- Success Cases Section -->
+    <section id="casos" class="section-cases">
+        <div class="container">
+            <h2 class="section-title">Casos de Sucesso</h2>
+            <p class="section-subtitle">Histórias reais de transformação e resultados</p>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <h3>Fazenda Santa Maria - MS</h3>
+                    <p class="case-result">+45% Produtividade</p>
+                    <p class="case-description">Implementação de plantio direto e irrigação inteligente resultou em aumento significativo de rendimento.</p>
+                </div>
+                <div class="case-card">
+                    <h3>Propriedade Verde Esperança - SP</h3>
+                    <p class="case-result">-60% Consumo de Água</p>
+                    <p class="case-description">Sistema de irrigação por gotejamento com sensores IoT reduziu desperdício drasticamente.</p>
+                </div>
+                <div class="case-card">
+                    <h3>Agropecuária Sustentável - GO</h3>
+                    <p class="case-result">ISO 14001 Certificada</p>
+                    <p class="case-description">Transformação completa em 18 meses com acesso a mercados premium internacionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soil Section -->
+    <section class="section-soil" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/soil-conservation-YjKmNoPqRsVwXyZaBcDeF.webp');">
+        <div class="soil-overlay"></div>
+        <div class="container soil-content">
+            <h2 class="section-title text-white">Solo Saudável, Futuro Garantido</h2>
+            <p class="text-gray-200">O solo é a base de tudo. Práticas sustentáveis preservam sua fertilidade e biodiversidade microbiana.</p>
+        </div>
+    </section>
+
+    <!-- Forest Section -->
+    <section class="section-forest" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/forest-preservation-3QrHKcFYHjKNwLJGEJLZvV.webp');">
+        <div class="forest-overlay"></div>
+        <div class="container forest-content">
+            <h2 class="section-title text-white">Preservação Florestal e Biodiversidade</h2>
+            <p class="text-gray-200">Equilíbrio entre agricultura e florestas nativas garante ecossistema saudável.</p>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section-certifications" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-machinery-fleet-gowmud5JTZKrXvd8ytoJhj.webp');">
+        <div class="certifications-overlay"></div>
+        <div class="container certifications-content">
+            <h2 class="section-title text-white">Certificações e Reconhecimentos</h2>
+            <p class="section-subtitle text-gray-200">Nossos compromissos com a sustentabilidade são validados por organismos internacionais.</p>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🌍</div>
+                    <h3>ISO 14001</h3>
+                    <p>Gestão Ambiental</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">✓</div>
+                    <h3>FSC Certificado</h3>
+                    <p>Floresta Sustentável</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⭐</div>
+                    <h3>Rainforest Alliance</h3>
+                    <p>Agricultura Responsável</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>B Corp Certified</h3>
+                    <p>Negócio de Impacto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section-blog" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-fields-sunrise-eJfGuuRcqQAprdhr5tnd8Q.webp');">
+        <div class="blog-overlay"></div>
+        <div class="container blog-content">
+            <h2 class="section-title text-white">Recursos e Artigos</h2>
+            <p class="section-subtitle text-gray-200">Conheça mais sobre práticas sustentáveis e inovações no agro.</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h3 class="text-white">Guia Completo: Plantio Direto</h3>
+                    <div class="blog-meta">
+                        <span>15 de Abril, 2026</span>
+                        <span>1.2K leituras</span>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <h3 class="text-white">Tecnologia IoT na Agricultura</h3>
+                    <div class="blog-meta">
+                        <span>10 de Abril, 2026</span>
+                        <span>2.5K leituras</span>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <h3 class="text-white">Impacto da ILPF no Carbono</h3>
+                    <div class="blog-meta">
+                        <span>05 de Abril, 2026</span>
+                        <span>890 leituras</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-faq" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-river-landscape-2QrHKcFYHjKNwLJGEJLZvV.webp');">
+        <div class="faq-overlay"></div>
+        <div class="container faq-content">
+            <h2 class="section-title text-white">Perguntas Frequentes</h2>
+            <p class="section-subtitle text-gray-200">Tire suas dúvidas sobre agricultura sustentável e nossas soluções.</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span class="faq-icon">▶</span>
+                        <h4 class="text-white">Como começar a implementar práticas sustentáveis?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-200">Começe com uma consultoria gratuita. Nossos especialistas analisarão sua propriedade e recomendarão as melhores práticas para seu contexto específico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span class="faq-icon">▶</span>
+                        <h4 class="text-white">Qual é o retorno financeiro da agricultura sustentável?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-200">Estudos mostram que propriedades sustentáveis têm 30-50% mais rentabilidade a longo prazo, além de acesso a mercados premium.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span class="faq-icon">▶</span>
+                        <h4 class="text-white">Quanto tempo leva para ver resultados?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-200">Os primeiros resultados aparecem em 6-12 meses. A transformação completa leva 2-3 anos, mas o processo é contínuo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span class="faq-icon">▶</span>
+                        <h4 class="text-white">Quais certificações são mais importantes?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-200">ISO 14001, FSC e Rainforest Alliance são as mais reconhecidas internacionalmente e abrem portas para mercados premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section-community">
+        <div class="container">
+            <div class="community-grid">
+                <div class="community-image">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/sustainable-harvest-P53iCpd4qvSfwyHiWsxEpZ.webp" alt="Comunidade">
+                </div>
+                <div class="community-text">
+                    <h2 class="section-title">Pessoas no Centro do Futuro</h2>
+                    <p>A sustentabilidade não é apenas ambiental, é também social e econômica. Apoiamos agricultores, comunidades e gerações futuras.</p>
+                    <ul class="community-list">
+                        <li>
+                            <span class="community-icon">👥</span>
+                            <div>
+                                <h4>Educação e Capacitação</h4>
+                                <p>Treinamos agricultores em práticas sustentáveis e tecnologias modernas.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="community-icon">💰</span>
+                            <div>
+                                <h4>Renda Justa</h4>
+                                <p>Acesso a mercados premium e preços diferenciados para produtos certificados.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="community-icon">🏥</span>
+                            <div>
+                                <h4>Qualidade de Vida</h4>
+                                <p>Melhor saúde, segurança alimentar e bem-estar para famílias rurais.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="navigateTo('contato')">Junte-se ao Movimento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-cta">
+        <div class="container cta-content">
+            <h2 class="section-title">O Futuro do Agro é Sustentável</h2>
+            <p>Juntos, podemos criar um modelo agrícola que alimenta o mundo, preserva o planeta e prospera economicamente. Comece sua transformação hoje.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-accent" onclick="navigateTo('contato')">Comece Agora</button>
+                <button class="btn btn-outline" onclick="navigateTo('sobre')">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Agro Forte</h4>
+                <p>Transformando a agricultura brasileira através da sustentabilidade e inovação.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('sobre')">Sobre</a></li>
+                    <li><a href="#" onclick="navigateTo('solucoes')">Soluções</a></li>
+                    <li><a href="#" onclick="navigateTo('contato')">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@agroforte.com.br</p>
+                <p>📱 (67) 3333-3333</p>
+                <p>📍 Mato Grosso do Sul, Brasil</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Galeria Completa de Máquinas Agrícolas</h2>
+                <button class="modal-close" onclick="closeGalleryModal()">✕</button>
+            </div>
+            <div class="modal-gallery">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-tractor-plowing-6nHJLvGZqQHLXiB2LBZqhN.webp" alt="Trator">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-harvester-working-8yMqNLJCvVGPxWwKHtVmLK.webp" alt="Colheitadeira">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-sprayer-application-7Kz2JhMnPqRsWxYzAbCdEf.webp" alt="Pulverizador">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-machinery-fleet-gowmud5JTZKrXvd8ytoJhj.webp" alt="Frota">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-fields-sunrise-eJfGuuRcqQAprdhr5tnd8Q.webp" alt="Campo">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663136155245/TqdJCqKg8FHJd3QGcH5kXx/drone-river-landscape-2QrHKcFYHjKNwLJGEJLZvV.webp" alt="Rio">
+            </div>
+        </div>
+    </div>
+
+    <!-- Pages Container -->
+    <div id="pagesContainer" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
